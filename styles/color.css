@@ -1,0 +1,36 @@
+:root {
+    --tabs-color: rgba(0, 25, 1, 0.7);
+    --txt-color: #E5E5FF;
+    --title-color: #E5E5FF;
+    --hover-tabs-color: rgba(63, 0, 252, 0.7);
+
+    --span-txt-color: #00ff66;
+    --star-color: rgb(63, 0, 252);
+
+    --form-color: rgb(63, 0, 252);
+    --btn-bg-color: rgba(0, 0, 0, 0.2);
+    --hover-btn-color: #00ff66;
+
+    --bg-image: url(../assets/pictures/macro-green-leaf.jpg);
+    --bg-color: rgba(0, 0, 0, 0.4);
+    --bg-card: rgba(0, 0, 0, 0.6);
+}
+
+.dark_mode {
+    --tabs-color: rgba(0, 0, 0, 0.5);
+    --txt-color: #fff;
+    --title-color: #fff;
+    --hover-tabs-color: rgba(255, 92, 0, 0.5);
+
+    --span-txt-color: #FF5C00;
+    --star-color: #8A00C4;
+
+    --form-color: #FF5C00;
+    --btn-bg-color: rgba(0, 0, 0, 0.2);
+    --hover-btn-color: #FF5C00;
+
+    --bg-image: url(../assets/pictures/black_white.jpg);
+    --bg-color: rgba(0, 0, 0, 0.2);
+    --bg-card: rgba(0, 0, 0, 0.4);
+    
+}
