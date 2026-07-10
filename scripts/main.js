@@ -98,8 +98,9 @@ function createItems(container, titleText, paragraph) {
 
     //* verification
     console.log(container, );
-
 };
+
+//! CREATE ACCESSIBILITY FUNCTION > CLOSE WITH ESC ET OPEN WITH ENTER
 
 // --------------------------------
 // --------------------------------
