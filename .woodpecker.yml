@@ -1,7 +1,7 @@
 pipeline:
-    deploy:
-        image: woodpeckerci/plugin-pages
-        settings:
-             token: ${CI_TOKEN}
-             branch: gh-pages
-             folder: .
+  deploy:
+    image: woodpeckerci/plugin-pages
+    settings:
+      token: ${CI_TOKEN}
+      branch: gh-pages
+      folder: .
