@@ -2,8 +2,8 @@
 
 Ce projet utilise **SCSS** pour le style.
 
-- Le fichier source est : `assets/css/main.scss`
-- Le fichier compilé utilisé par le navigateur est : `assets/css/main.css`
+- Le fichier source est : `styles/main.scss`
+- Le fichier compilé utilisé par le navigateur est : `styles/main.css`
 - La compilation est effectuée via l’extension VS Code **Live Sass Compiler**
 
 Pour modifier le style :
