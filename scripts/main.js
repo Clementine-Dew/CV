@@ -13,7 +13,6 @@ const NAME_TITLE = document.getElementById(`name_title`);
     //* verification
 console.log(LINK_ABOUT, LINK_FORMATIONS, LINK_EXPERIENCES, LINK_CONTACT, MENU_DIVS, NAME_TITLE, );
 
-
 // RECUPERATION DIVS CARD
 const ABOUT = document.getElementById(`card_about`);
 const FORMATIONS = document.getElementById(`card_formations`);
@@ -25,11 +24,10 @@ console.log(ABOUT, FORMATIONS, EXPERIENCES, CONTACT, );
 
 // RECUPERATION MODE BTNS
 const BTN_DARK = document.getElementById(`dark_mode_btn`);
-const BTN_COLORFUL = document.getElementById(`colorful_mode_btn`);
 const BTN_CLASSIC = document.getElementById(`classic_mode_btn`);
 
     //* verification
-console.log(BTN_CLASSIC, BTN_COLORFUL, BTN_DARK, );
+console.log(BTN_CLASSIC, BTN_DARK, );
 
 
 // --------------------------------
@@ -42,11 +40,21 @@ function setMode() {
     BTN_DARK.onclick = () => {
         document.body.classList.remove(...document.body.classList);
         document.body.className = `dark_mode`;
+
+        if (document.body.classList.contains(`dark_mode`)) {
+            BTN_DARK.style.display = `none`;
+            BTN_CLASSIC.style.display = `block`;
+        };
     };
 
     BTN_CLASSIC.onclick = () => {
         document.body.classList.remove(...document.body.classList);
         document.body.className = `classic_mode`;
+
+        if (document.body.classList.contains(`classic_mode`)) {
+            BTN_CLASSIC.style.display = `none`;
+            BTN_DARK.style.display = `block`;
+        };
     };
 
 };

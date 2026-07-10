@@ -14,6 +14,8 @@
     --bg-image: url(../assets/pictures/macro-green-leaf.jpg);
     --bg-color: rgba(0, 0, 0, 0.4);
     --bg-card: rgba(0, 0, 0, 0.6);
+
+    --btn-mode-bg-color: rgba(0, 0, 0, 0.6);
 }
 
 .dark_mode {
@@ -33,4 +35,5 @@
     --bg-color: rgba(0, 0, 0, 0.2);
     --bg-card: rgba(0, 0, 0, 0.4);
     
+    --btn-mode-bg-color: rgba(255, 92, 0, 0.6);
 }
