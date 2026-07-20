@@ -10,3 +10,9 @@ Pour modifier le style :
 1. Ouvrir `main.scss`
 2. Activer "Watch Sass" dans VS Code
 3. Le fichier `main.css` sera généré automatiquement
+
+# Accéder à mon CV en ligne
+
+https://clementine-dew.github.io/CV/
+
+🌻
