@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* GENERAL LAYOUT & IMPORT */
 @font-face {
   font-family: RobotoMono-VariableFont_wght;
@@ -99,7 +98,6 @@ main .column .name_title .job_title {
     font-size: 16px;
   }
 }
-
 main .column .icons_mode {
   display: flex;
   flex-direction: row;
@@ -119,13 +117,19 @@ main .column .icons_mode button {
 main .column .icons_mode button:hover {
   background-color: var(--btn-mode-bg-color);
 }
+main .column .icons_mode #download_cv_btn {
+  display: block;
+}
+main .column .icons_mode #download_cv_btn a {
+  text-decoration: none;
+  border: none;
+}
 main .column .icons_mode #dark_mode_btn {
   display: block;
 }
 main .column .icons_mode #classic_mode_btn {
   display: none;
 }
-
 main .colors_palette {
   height: 30%;
   width: 100%;
@@ -142,8 +146,8 @@ main .colors_palette {
 main .colors_palette .about {
   position: absolute;
   bottom: 0;
-  left: 8%;
-  width: 15%;
+  left: 4%;
+  width: 12%;
   height: 200px;
   padding-top: 20px;
   background-color: var(--tabs-color);
@@ -158,8 +162,8 @@ main .colors_palette .about:hover {
 main .colors_palette .formations {
   position: absolute;
   bottom: 0;
-  left: 31%;
-  width: 15%;
+  left: 20%;
+  width: 12%;
   height: 200px;
   padding-top: 20px;
   background-color: var(--tabs-color);
@@ -174,8 +178,8 @@ main .colors_palette .formations:hover {
 main .colors_palette .jobs {
   position: absolute;
   bottom: 0;
-  right: 31%;
-  width: 15%;
+  left: 36%;
+  width: 12%;
   height: 200px;
   padding-top: 20px;
   background-color: var(--tabs-color);
@@ -187,11 +191,43 @@ main .colors_palette .jobs:hover {
   cursor: pointer;
   height: 280px;
 }
+main .colors_palette .projects {
+  position: absolute;
+  bottom: 0;
+  right: 36%;
+  width: 12%;
+  height: 200px;
+  padding-top: 20px;
+  background-color: var(--tabs-color);
+  border-radius: 10px 10px 0px 0px;
+  transition: height 0.25s ease, background-color 0.25s ease;
+}
+main .colors_palette .projects:hover {
+  background-color: var(--hover-tabs-color);
+  cursor: pointer;
+  height: 280px;
+}
+main .colors_palette .skills {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  width: 12%;
+  height: 200px;
+  padding-top: 20px;
+  background-color: var(--tabs-color);
+  border-radius: 10px 10px 0px 0px;
+  transition: height 0.25s ease, background-color 0.25s ease;
+}
+main .colors_palette .skills:hover {
+  background-color: var(--hover-tabs-color);
+  cursor: pointer;
+  height: 280px;
+}
 main .colors_palette .contact {
   position: absolute;
   bottom: 0;
-  right: 8%;
-  width: 15%;
+  right: 4%;
+  width: 12%;
   height: 200px;
   padding-top: 20px;
   background-color: var(--tabs-color);
@@ -203,7 +239,6 @@ main .colors_palette .contact:hover {
   cursor: pointer;
   height: 280px;
 }
-
 @media (max-width: 1280px) {
   main .colors_palette {
     font-size: 18px;
@@ -419,5 +454,4 @@ textarea:focus,
 a:focus {
   border-radius: 100%;
 }
-
-/* ACCESSIBILITY *//*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */

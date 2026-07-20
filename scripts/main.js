@@ -2,6 +2,8 @@
 const LINK_ABOUT = document.getElementById(`menu_about`);
 const LINK_FORMATIONS = document.getElementById(`menu_formations`);
 const LINK_EXPERIENCES = document.getElementById(`menu_experiences`);
+const LINK_PROJECTS = document.getElementById(`menu_projects`);
+const LINK_SKILLS = document.getElementById(`menu_skills`);
 const LINK_CONTACT = document.getElementById(`menu_contact`);
 
 // RECUPERATION DIV PARENT DES DIVS MENU
@@ -11,16 +13,18 @@ const MENU_DIVS = document.getElementById(`menu_div`);
 const NAME_TITLE = document.getElementById(`name_title`);
 
     //* verification
-console.log(LINK_ABOUT, LINK_FORMATIONS, LINK_EXPERIENCES, LINK_CONTACT, MENU_DIVS, NAME_TITLE, );
+console.log(LINK_ABOUT, LINK_FORMATIONS, LINK_EXPERIENCES, LINK_PROJECTS, LINK_SKILLS, LINK_CONTACT, MENU_DIVS, NAME_TITLE, );
 
 // RECUPERATION DIVS CARD
 const ABOUT = document.getElementById(`card_about`);
 const FORMATIONS = document.getElementById(`card_formations`);
 const EXPERIENCES = document.getElementById(`card_experiences`);
+const PROJECTS = document.getElementById(`card_projects`);
+const SKILLS = document.getElementById(`card_skills`);
 const CONTACT = document.getElementById(`card_contact`);
 
     //* verification
-console.log(ABOUT, FORMATIONS, EXPERIENCES, CONTACT, );
+console.log(ABOUT, FORMATIONS, EXPERIENCES, PROJECTS, SKILLS, CONTACT, );
 
 // RECUPERATION MODE BTNS
 const BTN_DARK = document.getElementById(`dark_mode_btn`);
@@ -141,7 +145,6 @@ LINK_EXPERIENCES.onclick = () => {
         `<span style="font-size: 15px;">Août 2022 - Août 2025</span> : <span style="color: var(--span-txt-color)">Educatrice</span> dans l'enseignement spécialisé de type 1 et 2 | <span style="font-style: italic; font-size: 15px;">Schaerbeek</span> <br>
         <span style="font-size: 15px;">Juil 2023/24/25</span> : <span style="color: var(--span-txt-color)">Educatrice</span> en plaine pour enfants à besoins spécifiques | <span style="font-style: italic; font-size: 15px;">OCS Schaerbeek</span> <br>
         <span style="font-size: 15px;">Sep 2014 - Août 2022</span> : <span style="color: var(--span-txt-color)">Educatrice</span> dans l'enseignement primaire | <span style="font-style: italic; font-size: 15px;">Schaerbeek</span> <br>
-        <span style="font-size: 15px;">Sep 2014 - Août 2022</span> : <span style="color: var(--span-txt-color)">Educatrice</span> dans l'enseignement primaire | <span style="font-style: italic; font-size: 15px;">Schaerbeek</span> <br>
         <span style="font-size: 15px;">Juil - Août 2013 & Avr 2014</span> : <span style="color: var(--span-txt-color)">Educatrice</span> en centre de vacances<span style="color: var(--star-color);">*</span> | <span style="font-style: italic; font-size: 15px;">Morlanwelz</span> <br>
         <span style="font-size: 15px;">Jan 2013 - Mars 2013</span> : <span style="color: var(--span-txt-color)">Educatrice</span> en maison de repos et soins<span style="color: var(--star-color);">*</span> | <span style="font-style: italic; font-size: 15px;">"La Maison de Mariemont" Morlanwelz</span> <br>
         <br>
@@ -152,6 +155,64 @@ LINK_EXPERIENCES.onclick = () => {
 
     addHiddenClass();
     createItems(EXPERIENCES, "Expériences", message);
+};
+
+// PROJECTS ADD EVENT AU CLICK
+LINK_PROJECTS.onclick = () => {
+    PROJECTS.classList.remove(`hidden`);
+
+    message =
+        `<span style="color: var(--span-txt-color)">HTML</span> | <span style="font-size: 15px;">Intermédiaire</span>
+        <br>
+        <a href= "https://codeberg.org/Clem_Dew/REGISTER_LOG_PAGES" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au repo" style="height: 30px;"></a> Page de connexion et <a href= "https://clementine-dew.github.io/VISIT_CARD/" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au visuel de carte de visite" style="height: 30px;"></a> carte de visite 
+        <br>
+        <span style="font-style: italic; font-size: 15px;">Strucuture de base, formulaire, attributs, accessibilité de base, intégration d'assets</span>
+        <br>
+        <br>
+        <span style="color: var(--span-txt-color)">CSS</span> | <span style="font-size: 15px;">Intermédiaire</span>
+        <br>
+        <a href= "https://clementine-dew.github.io/OCR_EXO_1/index.html" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au repo" style="height: 30px;"></a> Site vitrine et mise en page responsive de mon CV
+        <br>
+        <span style="font-style: italic; font-size: 15px;">Flexbox, grid, responsive design, SCSS : nesting</span>
+        <br>
+        <br>
+        <span style="color: var(--span-txt-color)">JavaScript</span> | <span style="font-size: 15px;">Débutante - Intermédiaire</span>
+        <br>
+        <a href= "https://clementine-dew.github.io/MEMORY_GAME/" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au visuel du memory" style="height: 30px;"></a> Memory game, <a href= "https://clementine-dew.github.io/TODO/" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au visuel de la TODO" style="height: 30px;"></a> TODO et <a href= "https://codeberg.org/Clem_Dew/CV" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au repo" style="height: 30px;"></a> CV dynamique
+        <br>
+        <span style="font-style: italic; font-size: 15px;">Manipulation du DOM, gestions des events et interactions dynamiques (affichage, masquage)</span>
+        <br>
+        <br>
+        <span style="color: var(--span-txt-color)">Python</span> | <span style="font-size: 15px;">Débutante</span>
+        <br>
+        <a href= "https://codeberg.org/Clem_Dew/BOOKSTORE" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au repo du bookstore" style="height: 30px;"></a> Bookstore dynamique en utilsant Django
+        <br>
+        <span style="font-style: italic; font-size: 15px;">Syntaxe et structure de base, Django (architecture MVT et mini-projet), manipulation d'une DB avec SQLite</span>
+        <br>
+        <br>
+        <span style="color: var(--span-txt-color)">PHP</span> | <span style="font-size: 15px;">Débutante</span>
+        <br>
+        <a href= "https://codeberg.org/Clem_Dew/CALCULATOR" target="t_blank"><img src="assets/icons/eye_16760991.png" alt="icone en forme d'oeil pour accéder au repo de la calculatrice" style="height: 30px;"></a> Calculatrice
+        <br>
+        <span style="font-style: italic; font-size: 15px;">Syntaxe, variables et conditions, intégration dans une page web</span>
+        <br>
+        <br>
+        <br>
+        <br>`;
+
+    addHiddenClass();
+    createItems(PROJECTS, "Projets", message);
+};
+
+// SKILLS ADD EVENT AU CLICK
+LINK_SKILLS.onclick = () => {
+    SKILLS.classList.remove(`hidden`);
+
+    message =
+        ``;
+
+    addHiddenClass();
+    createItems(SKILLS, "Skills", message);
 };
 
 // CONTACT ADD EVENT AU CLICK
@@ -228,6 +289,14 @@ document.onpointerdown = (event) => {
         return;
     };
 
+    if (PROJECTS.contains(event.target)) {
+        return;
+    }
+
+    if (SKILLS.contains(event.target)) {
+        return;
+    }
+
     if (CONTACT.contains(event.target)) {
         return;
     };
@@ -236,12 +305,16 @@ document.onpointerdown = (event) => {
     ABOUT.innerText = ``;
     FORMATIONS.innerText = ``;
     EXPERIENCES.innerText = ``;
+    PROJECTS.innerText = ``;
+    SKILLS.innerText = ``;
     CONTACT.innerText = ``;
 
     // ADD 'HIDDEN' CLASS
     ABOUT.classList.add(`hidden`);
     FORMATIONS.classList.add(`hidden`);
     EXPERIENCES.classList.add(`hidden`);
+    PROJECTS.classList.add(`hidden`);
+    SKILLS.classList.add(`hidden`);
     CONTACT.classList.add(`hidden`);
 
     removeHiddenClass();
