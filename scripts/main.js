@@ -105,10 +105,23 @@ function createItems(container, titleText, paragraph) {
 };
 
 //! CREATE ACCESSIBILITY FUNCTION > CLOSE WITH ESC ET OPEN WITH ENTER
+// function toggleMode() {
+//     const VISIBLE = LINK_ABOUT.style.display === `block`;
+// }
 
 // --------------------------------
 // --------------------------------
 
+// ABOUT EVENT AU KEYDOWN
+// LINK_ABOUT.addEventListener(`keydown`, (e) => {
+//     // FERMER AVEC ESCAPE
+//     if (e.key === `Escape` && LINK_ABOUT.style.display === `block`) {
+//         toggleMode();
+//         ABOUT.focus();
+//     }
+// })
+
+//! FIN
 
 // ABOUT ADD EVENT AU CLICK
 LINK_ABOUT.onclick = () => {
